@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Introduction</title>
+</head>
+<body>
+
+    <header>
+        <h1>Hello, I am Mukesh!</h1>
+        <p>Welcome to my personal introduction page.</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                My name is Mukesh. I am a college student
+                pursuing a Bachelor of Computer Applications (BCA).
+                I am interested in technology and software development.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Education</h2>
+            <p>
+                I have completed Class 12 and am currently
+                pursuing my BCA degree.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Travelling</li>
+                <li>Exploring mountains</li>
+                <li>Learning new technologies</li>
+                <li>Coding</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>My Goal</h2>
+            <p>
+                My goal is to become a skilled software engineer
+                and build useful applications using modern technologies.
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <p>Email: mukesh@example.com</p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Mukesh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

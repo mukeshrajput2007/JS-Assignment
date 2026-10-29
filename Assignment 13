@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College Course</title>
+</head>
+<body>
+
+    <header>
+        <h1>My College Course</h1>
+        <p>Bachelor of Computer Applications (BCA)</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>About My Course</h2>
+            <p>
+                I am pursuing a Bachelor of Computer Applications (BCA).
+                This course focuses on computer applications, programming,
+                software development, and information technology.
+            </p>
+        </section>
+
+        <section>
+            <h2>Subjects I Study</h2>
+            <ul>
+                <li>Programming in Java</li>
+                <li>Web Development</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management System</li>
+                <li>Computer Networks</li>
+                <li>Artificial Intelligence</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills I Want to Learn</h2>
+            <ol>
+                <li>HTML and CSS</li>
+                <li>JavaScript</li>
+                <li>Java Programming</li>
+                <li>Python Programming</li>
+                <li>Data Analysis</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>My Career Goal</h2>
+            <p>
+                My goal is to become a skilled software engineer
+                and develop useful applications using modern technologies.
+            </p>
+        </section>
+
+        <section>
+            <h2>Why I Chose BCA</h2>
+            <p>
+                I chose BCA because I am interested in computers,
+                coding, technology, and problem-solving.
+            </p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Mukesh | My College Course</p>
+    </footer>
+
+</body>
+</html>

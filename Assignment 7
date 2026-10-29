@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Mukesh</title>
+</head>
+<body>
+
+    <h1>Mukesh</h1>
+    <p>Email: mukesh@example.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Address: Bareilly, Uttar Pradesh, India</p>
+
+    <hr>
+
+    <h2>Career Objective</h2>
+    <p>
+        To learn new technologies and build a successful career
+        in web development and software engineering.
+    </p>
+
+    <h2>Education</h2>
+    <ul>
+        <li>Bachelor of Computer Applications (BCA) - Pursuing</li>
+        <li>Class 12th - Completed</li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+        <li>Basic HTML Webpage</li>
+        <li>Personal Resume Website</li>
+    </ul>
+
+    <h2>Strengths</h2>
+    <ul>
+        <li>Quick Learner</li>
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
+    </ul>
+
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Travelling</li>
+        <li>Learning Coding</li>
+        <li>Exploring Mountains</li>
+    </ul>
+
+    <hr>
+
+    <p><strong>Declaration:</strong> I hereby declare that the information provided above is true to the best of my knowledge.</p>
+
+    <p>Date: __________</p>
+    <p>Place: Bareilly</p>
+
+    <p>Signature: Mukesh</p>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Font and Colour</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+        }
+
+        header {
+            text-align: center;
+            background-color: #1e40af;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #1e40af;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #374151;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .contact {
+            color: #e0e7ff;
+        }
+
+        .highlight {
+            color: #059669;
+            font-weight: bold;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: #666666;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume">
+
+        <header>
+            <h1>Mukesh</h1>
+            <p class="contact">
+                Email: mukesh@example.com |
+                Phone: +91 9876543210
+            </p>
+            <p class="contact">Bareilly, Uttar Pradesh, India</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Career Objective</h2>
+                <p>
+                    To build a successful career in software development
+                    and use my technical skills to solve real-world problems.
+                </p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p class="highlight">Currently Pursuing</p>
+                <p>Class 12th - Completed</p>
+            </section>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>HTML and CSS</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <h3>Personal Portfolio</h3>
+                <p>Created a personal webpage using HTML and CSS.</p>
+
+                <h3>Resume Webpage</h3>
+                <p>Designed a resume using HTML and CSS styling.</p>
+            </section>
+
+            <section>
+                <h2>Strengths</h2>
+                <ul>
+                    <li>Quick Learner</li>
+                    <li>Problem Solving</li>
+                    <li>Teamwork</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Hobbies</h2>
+                <p>Travelling, coding, and exploring mountains.</p>
+            </section>
+
+            <section>
+                <h2>Declaration</h2>
+                <p>
+                    I declare that the information provided above
+                    is true to the best of my knowledge.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Mukesh. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

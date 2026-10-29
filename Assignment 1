@@ -1,0 +1,9 @@
+ Enter URL: We type a website address (URL) into the browser, such as www.google.com.
+ DNS Lookup: DNS converts the domain name into an IP address.. Establish Connection: The browser connects to the web server using TCP.
+ HTTPS Handshake: If HTTPS is used, a secure connection is established.
+ Send Request: The browser sends an HTTP request to the server.
+ Server Processing: The server processes the request and finds the required resources.
+ Receive Response: The server sends an HTTP response containing HTML, CSS, JavaScript, and other files.
+ Parse HTML: The browser reads the HTML and creates the DOM (Document Object Model).
+ Render Page: The browser applies CSS, executes JavaScript, and displays the webpag        
+ Page Displayed: Finally, the webpage appears on the screen, and we can interact with it.

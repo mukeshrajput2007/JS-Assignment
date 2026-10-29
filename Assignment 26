@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - Annotated</title>
+
+    <style>
+        * {
+            box-sizing: content-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #2563eb;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1e40af;
+        }
+
+        /* Margin: Space outside the border */
+        .box {
+            margin: 30px;
+            /* Padding: Space between content and border */
+            padding: 20px;
+            /* Border: Surrounds the padding and content */
+            border: 5px solid #2563eb;
+            /* Content: The actual text area */
+            background-color: #bfdbfe;
+        }
+
+        .content {
+            background-color: #fde68a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .margin-example {
+            margin: 40px;
+            padding: 20px;
+            border: 4px solid #059669;
+            background-color: #d1fae5;
+        }
+
+        .padding-example {
+            margin: 20px;
+            padding: 40px;
+            border: 3px solid #dc2626;
+            background-color: #fee2e2;
+        }
+
+        .border-example {
+            margin: 20px;
+            padding: 15px;
+            border: 10px dashed #7c3aed;
+            background-color: #ede9fe;
+        }
+
+        .diagram {
+            background-color: #fef3c7;
+            border: 2px dashed #d97706;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .diagram-border {
+            background-color: #bfdbfe;
+            border: 5px solid #2563eb;
+            padding: 20px;
+        }
+
+        .diagram-content {
+            background-color: #fde68a;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1e293b;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Box Model</h1>
+        <p>Understanding Content, Padding, Border and Margin</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. Box Model Overview</h2>
+            <p>Every HTML element is represented as a rectangular box.</p>
+
+            <div class="diagram">
+                <strong>Margin</strong> - Space outside the border
+
+                <div class="diagram-border">
+                    <strong>Border</strong> - Surrounds the padding and content
+
+                    <div class="diagram-content">
+                        <strong>Padding</strong> - Space around the content
+
+                        <div class="content">
+                            <strong>Content</strong>
+                            <p>Text or other elements appear here.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Complete Box Example</h2>
+
+            <div class="box">
+                <div class="content">
+                    This is the content area.
+                </div>
+                <p>Padding: 20px</p>
+                <p>Border: 5px solid blue</p>
+                <p>Margin: 30px</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Margin Example</h2>
+            <p>Margin creates space outside an element's border.</p>
+
+            <div class="margin-example">
+                This box has a margin of 40px.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Padding Example</h2>
+            <p>Padding creates space between content and border.</p>
+
+            <div class="padding-example">
+                This box has a padding of 40px.
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Border Example</h2>
+            <p>Border surrounds the content and padding.</p>
+
+            <div class="border-example">
+                This box has a 10px dashed purple border.
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Box Size Calculation</h2>
+
+            <p>For the default content-box model:</p>
+
+            <ul>
+                <li>Content width = 200px</li>
+                <li>Left and right padding = 20px each</li>
+                <li>Left and right border = 5px each</li>
+                <li>Left and right margin = 30px each</li>
+            </ul>
+
+            <p><strong>Total width including margin:</strong></p>
+            <p>200 + 40 + 10 + 60 = 310px</p>
+
+            <p>
+                The visible box width, excluding margin, is
+                200 + 40 + 10 = 250px.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | CSS Box Model Learning Project</p>
+    </footer>
+
+</body>
+</html>

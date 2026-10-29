@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Mukesh</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mukesh</h1>
+        <address>
+            Email: mukesh@example.com<br>
+            Phone: +91 9876543210<br>
+            Bareilly, Uttar Pradesh, India
+        </address>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Career Objective</h2>
+            <p>
+                To learn new technologies and build a successful
+                career in software development.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <article>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p>Currently Pursuing</p>
+            </article>
+            <article>
+                <h3>Class 12th</h3>
+                <p>Completed</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <article>
+                <h3>Basic HTML Webpage</h3>
+                <p>Created a basic webpage using HTML.</p>
+            </article>
+            <article>
+                <h3>Personal Resume</h3>
+                <p>Designed a resume using semantic HTML elements.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Strengths</h2>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Travelling</li>
+                <li>Learning Coding</li>
+                <li>Exploring Mountains</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <strong>Declaration:</strong>
+            I declare that the information provided above is true
+            to the best of my knowledge.
+        </p>
+        <p>Date: __________</p>
+        <p>Place: Bareilly</p>
+        <p>Signature: Mukesh</p>
+    </footer>
+
+</body>
+</html>

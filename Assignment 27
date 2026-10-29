@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Variants</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #1e40af;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #6b7280;
+        }
+
+        .card button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2563eb;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .card button:hover {
+            background-color: #1e40af;
+        }
+
+        /* Basic Card */
+        .basic-card {
+            border: 1px solid #e5e7eb;
+        }
+
+        /* Featured Card */
+        .featured-card {
+            border-top: 5px solid #2563eb;
+        }
+
+        .featured-label {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-bottom: 12px;
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Image Card */
+        .image-placeholder {
+            height: 160px;
+            background: linear-gradient(135deg, #2563eb, #10b981);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Pricing Card */
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #059669;
+        }
+
+        .price span {
+            font-size: 14px;
+            color: #6b7280;
+            font-weight: normal;
+        }
+
+        /* Dark Card */
+        .dark-card {
+            background-color: #111827;
+            color: white;
+        }
+
+        .dark-card p {
+            color: #d1d5db;
+        }
+
+        .dark-card button {
+            background-color: #10b981;
+            color: #064e3b;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            color: #6b7280;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 18px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Card Variants</h1>
+        <p>Different card designs using HTML and CSS</p>
+    </header>
+
+    <main class="card-container">
+
+        <!-- Basic Card -->
+        <article class="card basic-card">
+            <div class="card-content">
+                <h2>Basic Card</h2>
+                <p>
+                    This is a simple card with a clean layout,
+                    a border, and a subtle shadow.
+                </p>
+                <button type="button">Learn More</button>
+            </div>
+        </article>
+
+        <!-- Featured Card -->
+        <article class="card featured-card">
+            <div class="card-content">
+                <span class="featured-label">FEATURED</span>
+                <h2>Featured Card</h2>
+                <p>
+                    This card stands out with a colored top border
+                    and a featured label.
+                </p>
+                <button type="button">Explore</button>
+            </div>
+        </article>
+
+        <!-- Image Card -->
+        <article class="card image-card">
+            <div class="image-placeholder" role="img" aria-label="Decorative blue and green gradient">
+                My Project
+            </div>
+            <div class="card-content">
+                <h2>Image Card</h2>
+                <p>
+                    This card uses a colorful header area to
+                    highlight a project or product.
+                </p>
+                <button type="button">View Project</button>
+            </div>
+        </article>
+
+        <!-- Pricing Card -->
+        <article class="card pricing-card">
+            <div class="card-content">
+                <h2>Starter Plan</h2>
+                <p class="price">₹499 <span>/ month</span></p>
+                <p>Suitable for beginners who want to get started.</p>
+                <ul>
+                    <li>Basic features</li>
+                    <li>Email support</li>
+                    <li>One user</li>
+                </ul>
+                <button type="button">Choose Plan</button>
+            </div>
+        </article>
+
+        <!-- Dark Card -->
+        <article class="card dark-card">
+            <div class="card-content">
+                <h2>Dark Card</h2>
+                <p>
+                    This variant uses a dark background with
+                    contrasting text and a green button.
+                </p>
+                <button type="button">Get Started</button>
+            </div>
+        </article>
+
+        <!-- Profile Card -->
+        <article class="card profile-card">
+            <div class="card-content">
+                <h2>Student Profile</h2>
+                <p><strong>Name:</strong> Alex</p>
+                <p><strong>Course:</strong> BCA</p>
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                <button type="button">View Profile</button>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Card Variants Project | HTML and CSS Practice</p>
+    </footer>
+
+</body>
+</html>

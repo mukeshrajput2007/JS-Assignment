@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mukesh's personal portfolio website">
+    <title>Styled Multipage Project</title>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #10b981;
+            --background: #f1f5f9;
+            --surface: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --spacing: 20px;
+            --radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        nav {
+            background: var(--secondary);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a7f3d0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--surface);
+            padding: 25px;
+            margin-bottom: var(--spacing);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--spacing);
+        }
+
+        .card {
+            background: var(--surface);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .card h3 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skills li {
+            background: #dbeafe;
+            color: var(--secondary);
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background: #059669;
+        }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 22px 12px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            main {
+                padding: 0 12px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>Mukesh's Portfolio</h1>
+        <p>Explore More, Worry Less</p>
+        <p>BCA Student | Aspiring Software Developer</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Mukesh. I am a BCA student
+                interested in programming, web development, and AI.
+                I enjoy learning new technologies and solving problems.
+            </p>
+            <a href="#projects" class="button">View My Projects</a>
+        </section>
+
+        <section id="skills">
+            <h2>My Technical Skills</h2>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Basic Webpage</h3>
+                    <p>A simple webpage created using HTML.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Personal Resume</h3>
+                    <p>A resume designed with semantic HTML and CSS.</p>
+                </article>
+
+                <article class="card">
+                    <h3>College Course Page</h3>
+                    <p>A webpage describing my course and subjects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>My Career Goal</h2>
+            <p>
+                My goal is to become a skilled software engineer
+                and develop useful applications using modern technology.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: mukesh@example.com</p>
+            <p>
+                GitHub:
+                <a href="https://github.com/" target="_blank"
+                   rel="noopener noreferrer">Visit GitHub</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mukesh's Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

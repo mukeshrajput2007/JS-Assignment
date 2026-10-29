@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images with Alt Text</title>
+</head>
+<body>
+
+    <h1>Images with Alt Text</h1>
+    <p>Examples of images using the HTML alt attribute.</p>
+
+    <h2>Mountain Image</h2>
+    <img
+        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500"
+        alt="Snow-covered mountains under a clear sky"
+        width="400"
+    >
+
+    <h2>Nature Image</h2>
+    <img
+        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500"
+        alt="Sunlight shining through a green forest"
+        width="400"
+    >
+
+    <h2>River Image</h2>
+    <img
+        src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?w=500"
+        alt="A peaceful natural landscape"
+        width="400"
+    >
+
+    <h2>Image with Missing Source</h2>
+    <img
+        src="missing-image.jpg"
+        alt="Placeholder for an image that cannot be loaded"
+        width="400"
+    >
+
+    <p>
+        The alt attribute provides alternative text when an image
+        cannot load and helps screen readers describe images to users.
+    </p>
+
+</body>
+</html>

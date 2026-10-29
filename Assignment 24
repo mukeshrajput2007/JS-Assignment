@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tokens</title>
+
+    <style>
+        :root {
+            /* Color Tokens */
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #10b981;
+            --background-color: #f8fafc;
+            --card-color: #ffffff;
+            --text-color: #333333;
+            --muted-color: #64748b;
+
+            /* Spacing Tokens */
+            --spacing-small: 8px;
+            --spacing-medium: 16px;
+            --spacing-large: 24px;
+
+            /* Typography Tokens */
+            --font-family: Arial, sans-serif;
+            --font-size-small: 14px;
+            --font-size-medium: 16px;
+            --font-size-large: 28px;
+
+            /* Other Design Tokens */
+            --border-radius: 10px;
+            --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--card-color);
+            text-align: center;
+            padding: var(--spacing-large);
+        }
+
+        header h1 {
+            font-size: var(--font-size-large);
+        }
+
+        main {
+            max-width: 900px;
+            margin: var(--spacing-large) auto;
+            padding: var(--spacing-medium);
+        }
+
+        .card {
+            background-color: var(--card-color);
+            padding: var(--spacing-large);
+            margin-bottom: var(--spacing-large);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+        }
+
+        .accent {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--card-color);
+            padding: var(--spacing-small) var(--spacing-large);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--card-color);
+            text-align: center;
+            padding: var(--spacing-medium);
+            font-size: var(--font-size-small);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Design Tokens Demo</h1>
+        <p>Consistent Design Using CSS Variables</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>What Are Design Tokens?</h2>
+            <p>
+                Design tokens are reusable values that store design
+                decisions such as colors, spacing, fonts, and border radius.
+            </p>
+            <p class="accent">
+                They help maintain a consistent design across a website.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Color Tokens</h2>
+            <p>Primary color: Blue</p>
+            <p>Secondary color: Dark Blue</p>
+            <p>Accent color: Green</p>
+            <p>Background color: Light Gray</p>
+        </section>
+
+        <section class="card">
+            <h2>Spacing and Typography</h2>
+            <p>Small spacing: 8px</p>
+            <p>Medium spacing: 16px</p>
+            <p>Large spacing: 24px</p>
+            <p>Font family: Arial</p>
+        </section>
+
+        <section class="card">
+            <h2>Reusable Button</h2>
+            <p>This button uses the same design tokens as the page.</p>
+            <a href="#top" class="button">Learn More</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Design Tokens Demo</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Types</title>
+
+    <style>
+        /* 1. Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* 2. Element Selector */
+        h2 {
+            color: blue;
+        }
+
+        /* 3. ID Selector */
+        #main-heading {
+            color: darkred;
+            text-align: center;
+        }
+
+        /* 4. Class Selector */
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        /* 5. Group Selector */
+        h3, h4 {
+            color: green;
+        }
+
+        /* 6. Descendant Selector */
+        div p {
+            color: purple;
+        }
+
+        /* 7. Child Selector */
+        ul > li {
+            margin: 8px;
+        }
+
+        /* 8. Attribute Selector */
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 8px;
+        }
+
+        /* 9. Pseudo-class Selector */
+        a:hover {
+            color: red;
+        }
+
+        /* 10. Pseudo-element Selector */
+        p::first-letter {
+            font-size: 24px;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-heading">CSS Selector Types</h1>
+
+    <section>
+        <h2>1. Element Selector</h2>
+        <p>Selects all elements of a specified type.</p>
+    </section>
+
+    <section>
+        <h2>2. ID Selector</h2>
+        <p>The main heading uses the ID selector.</p>
+    </section>
+
+    <section>
+        <h2>3. Class Selector</h2>
+        <p class="highlight">This paragraph uses a class selector.</p>
+    </section>
+
+    <section>
+        <h2>4. Group Selector</h2>
+        <h3>This is an H3 heading.</h3>
+        <h4>This is an H4 heading.</h4>
+    </section>
+
+    <section>
+        <h2>5. Descendant Selector</h2>
+        <div>
+            <p>This paragraph is inside a div.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Child Selector</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Attribute Selector</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username">
+    </section>
+
+    <section>
+        <h2>8. Pseudo-class Selector</h2>
+        <a href="https://www.google.com">Hover over this link</a>
+    </section>
+
+    <section>
+        <h2>9. Pseudo-element Selector</h2>
+        <p>This paragraph demonstrates the first-letter pseudo-element.</p>
+    </section>
+
+</body>
+</html>

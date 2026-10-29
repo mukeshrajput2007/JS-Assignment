@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Learn about HTML meta tags, SEO, and webpage optimization.">
+
+    <meta name="keywords" content="HTML, meta tags, SEO, web development, HTML tutorial">
+
+    <meta name="author" content="Mukesh">
+
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Meta Tags Audit - HTML Tutorial</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>HTML Meta Tags Audit</h1>
+        <p>Understanding meta tags in HTML.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>What Are Meta Tags?</h2>
+            <p>
+                Meta tags provide information about a webpage to
+                browsers and search engines. They are placed inside
+                the head element of an HTML document.
+            </p>
+        </section>
+
+        <section>
+            <h2>Important Meta Tags</h2>
+            <ul>
+                <li>Charset: Defines character encoding.</li>
+                <li>Viewport: Helps webpages display correctly on mobile devices.</li>
+                <li>Description: Summarizes the webpage for search engines.</li>
+                <li>Author: Identifies the content author.</li>
+                <li>Robots: Gives crawling and indexing instructions to search engines.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Audit Checklist</h2>
+            <ul>
+                <li>Check whether the title is present.</li>
+                <li>Check whether the description is meaningful.</li>
+                <li>Verify the viewport meta tag.</li>
+                <li>Confirm the correct character encoding.</li>
+                <li>Ensure all meta tags are inside the head element.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mukesh | HTML Learning Project</p>
+    </footer>
+
+</body>
+</html>

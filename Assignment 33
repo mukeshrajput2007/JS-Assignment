@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap Products</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        header h1 {
+            color: #2563eb;
+        }
+
+        header p {
+            color: #6b7280;
+        }
+
+        /* Product Container */
+        .products-container {
+            max-width: 1100px;
+            margin: auto;
+
+            /* Flexbox Properties */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 25px;
+        }
+
+        /* Product Card */
+        .product-card {
+            flex: 1 1 250px;
+            max-width: 320px;
+            min-width: 0;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 100%;
+            height: 190px;
+            background-color: #e5e7eb;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Product Details */
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-details h2 {
+            margin-top: 0;
+            font-size: 21px;
+        }
+
+        .product-details p {
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .price {
+            color: #059669;
+            font-size: 23px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .old-price {
+            color: #9ca3af;
+            font-size: 14px;
+            font-weight: normal;
+            text-decoration: line-through;
+            margin-left: 8px;
+        }
+
+        .rating {
+            color: #f59e0b;
+            margin-bottom: 10px;
+        }
+
+        /* Button */
+        .product-details button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .product-details button:hover {
+            background-color: #1e40af;
+        }
+
+        /* Flex Wrap Explanation */
+        .info {
+            max-width: 1100px;
+            margin: 45px auto 0;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .info h2 {
+            color: #1e40af;
+        }
+
+        .info li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            color: #6b7280;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 18px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            .product-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Products</h1>
+        <p>Responsive product layout using CSS Flexbox and flex-wrap</p>
+    </header>
+
+    <main>
+
+        <!-- Products Section -->
+        <section class="products-container">
+
+            <!-- Product 1 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://placehold.co/400x300/dbeafe/1e40af?text=Headphones"
+                        alt="Wireless headphones"
+                    >
+                </div>
+
+                <div class="product-details">
+                    <h2>Wireless Headphones</h2>
+
+                    <div class="rating">★★★★★ (4.8)</div>
+
+                    <p>
+                        Enjoy high-quality sound with comfortable
+                        wireless headphones.
+                    </p>
+
+                    <div class="price">
+                        ₹1,499
+                        <span class="old-price">₹1,999</span>
+                    </div>
+
+                    <button type="button">Add to Cart</button>
+                </div>
+
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://placehold.co/400x300/dcfce7/166534?text=Smart+Watch"
+                        alt="Smart watch"
+                    >
+                </div>
+
+                <div class="product-details">
+                    <h2>Smart Watch</h2>
+
+                    <div class="rating">★★★★☆ (4.5)</div>
+
+                    <p>
+                        Track your daily activities with this
+                        stylish and smart watch.
+                    </p>
+
+                    <div class="price">
+                        ₹2,499
+                        <span class="old-price">₹2,999</span>
+                    </div>
+
+                    <button type="button">Add to Cart</button>
+                </div>
+
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://placehold.co/400x300/fef3c7/92400e?text=Backpack"
+                        alt="Travel backpack"
+                    >
+                </div>
+
+                <div class="product-details">
+                    <h2>Travel Backpack</h2>
+
+                    <div class="rating">★★★★★ (4.9)</div>
+
+                    <p>
+                        A durable and lightweight backpack for
+                        college students and travellers.
+                    </p>
+
+                    <div class="price">
+                        ₹999
+                        <span class="old-price">₹1,299</span>
+                    </div>
+
+                    <button type="button">Add to Cart</button>
+                </div>
+
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://placehold.co/400x300/fce7f3/9d174d?text=Shoes"
+                        alt="Sports shoes"
+                    >
+                </div>
+
+                <div class="product-details">
+                    <h2>Sports Shoes</h2>
+
+                    <div class="rating">★★★★☆ (4.6)</div>
+
+                    <p>
+                        Lightweight sports shoes designed for
+                        walking, running, and everyday use.
+                    </p>
+
+                    <div class="price">
+                        ₹1,799
+                        <span class="old-price">₹2,199</span>
+                    </div>
+
+                    <button type="button">Add to Cart</button>
+                </div>
+
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://placehold.co/400x300/e0e7ff/3730a3?text=Keyboard"
+                        alt="Computer keyboard"
+                    >
+                </div>
+
+                <div class="product-details">
+                    <h2>Computer Keyboard</h2>
+
+                    <div class="rating">★★★★★ (4.7)</div>
+
+                    <p>
+                        A comfortable keyboard for typing,
+                        studying, and office work.
+                    </p>
+
+                    <div class="price">
+                        ₹799
+                        <span class="old-price">₹999</span>
+                    </div>
+
+                    <button type="button">Add to Cart</button>
+                </div>
+
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img
+                        src="https://placehold.co/400x300/ccfbf1/115e59?text=Water+Bottle"
+                        alt="Reusable water bottle"
+                    >
+                </div>
+
+                <div class="product-details">
+                    <h2>Water Bottle</h2>
+
+                    <div class="rating">★★★★☆ (4.4)</div>
+
+                    <p>
+                        A reusable water bottle suitable for
+                        college, gym, and travelling.
+                    </p>
+
+                    <div class="price">
+                        ₹399
+                        <span class="old-price">₹499</span>
+                    </div>
+
+                    <button type="button">Add to Cart</button>
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- Flexbox Explanation -->
+        <section class="info">
+            <h2>Understanding Flex Wrap</h2>
+
+            <ul>
+                <li>
+                    <strong>display: flex;</strong> - Creates a
+                    flexible layout for the product cards.
+                </li>
+
+                <li>
+                    <strong>flex-wrap: wrap;</strong> - Moves cards
+                    to the next row when there is not enough space.
+                </li>
+
+                <li>
+                    <strong>justify-content: center;</strong> -
+                    Aligns cards horizontally in the center.
+                </li>
+
+                <li>
+                    <strong>gap: 25px;</strong> - Adds space between
+                    product cards.
+                </li>
+
+                <li>
+                    <strong>flex: 1 1 250px;</strong> - Allows cards
+                    to grow and shrink with a base width of 250px.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Flex Wrap Products Project | HTML & CSS Practice</p>
+    </footer>
+
+</body>
+</html>

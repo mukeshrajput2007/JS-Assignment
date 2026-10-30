@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Overflow</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 25px;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .example {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #1e40af;
+        }
+
+        /* Example 1: Horizontal Overflow */
+        .horizontal-box {
+            width: 100%;
+            overflow-x: auto;
+            border: 2px solid #2563eb;
+            padding: 12px;
+        }
+
+        .wide-content {
+            width: 900px;
+            padding: 20px;
+            background-color: #dbeafe;
+            white-space: nowrap;
+        }
+
+        /* Example 2: Text Overflow */
+        .text-box {
+            width: 100%;
+            padding: 15px;
+            background-color: #dcfce7;
+            overflow-wrap: break-word;
+            border: 1px solid #16a34a;
+        }
+
+        /* Example 3: Image Overflow */
+        .image-box {
+            width: 100%;
+            border: 2px solid #f59e0b;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Example 4: Fixed Height Overflow */
+        .scroll-box {
+            height: 120px;
+            overflow-y: auto;
+            padding: 15px;
+            background-color: #fef3c7;
+            border: 1px solid #d97706;
+        }
+
+        /* Example 5: Responsive Cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            min-width: 0;
+            padding: 20px;
+            background-color: #ede9fe;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #6b7280;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .example {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fix Overflow in CSS</h1>
+        <p>Learn how to prevent content from overflowing its container.</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Example 1 -->
+        <section class="example">
+            <h2>1. Horizontal Overflow</h2>
+            <p>Scroll horizontally when content is wider than its container.</p>
+
+            <div class="horizontal-box">
+                <div class="wide-content">
+                    This content is wider than the container. Scroll horizontally
+                    to see the complete content.
+                </div>
+            </div>
+        </section>
+
+        <!-- Example 2 -->
+        <section class="example">
+            <h2>2. Text Overflow</h2>
+            <p>Long text should wrap instead of extending outside the box.</p>
+
+            <div class="text-box">
+                ThisIsAVeryLongWordWithoutSpacesThatCouldCauseHorizontalOverflow
+                This text demonstrates how overflow-wrap: break-word fixes the issue.
+            </div>
+        </section>
+
+        <!-- Example 3 -->
+        <section class="example">
+            <h2>3. Image Overflow</h2>
+            <p>Use max-width: 100% to keep images inside their containers.</p>
+
+            <div class="image-box">
+                <img
+                    src="https://placehold.co/1000x300/2563eb/ffffff?text=Responsive+Image"
+                    alt="A blue responsive placeholder image"
+                >
+            </div>
+        </section>
+
+        <!-- Example 4 -->
+        <section class="example">
+            <h2>4. Vertical Overflow</h2>
+            <p>Use overflow-y: auto to add vertical scrolling when needed.</p>
+
+            <div class="scroll-box">
+                <p>Line 1: This is sample content inside a fixed-height box.</p>
+                <p>Line 2: The content continues below the visible area.</p>
+                <p>Line 3: You can scroll vertically to read more.</p>
+                <p>Line 4: CSS overflow-y controls vertical overflow.</p>
+                <p>Line 5: This is the last line of the example.</p>
+            </div>
+        </section>
+
+        <!-- Example 5 -->
+        <section class="example">
+            <h2>5. Responsive Cards</h2>
+            <p>Flexbox with flex-wrap allows cards to move to the next row.</p>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Card One</h3>
+                    <p>This card adjusts to the available screen width.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Card Two</h3>
+                    <p>This card moves to another row on smaller screens.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Card Three</h3>
+                    <p>Responsive layouts help prevent horizontal overflow.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Fix Overflow Project | HTML and CSS Practice</p>
+    </footer>
+
+</body>
+</html>
